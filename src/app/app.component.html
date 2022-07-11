@@ -1,0 +1,14 @@
+<p>Pooling method, start and watch magic :)</p>
+
+<p>List of cars</p>
+
+<table class="rwd-table">
+  <tr>
+    <th>Name</th>
+    <th>Status</th>
+  </tr>
+  <tr *ngFor="let car of cars">
+    <td>{{ car.value }}</td>
+    <td [class.color]="getColor(car.status)">{{ car.status }}</td>
+  </tr>
+</table>
